@@ -119,15 +119,15 @@ strong { font-weight: 650; }
   margin: 0 auto;
   padding: clamp(3rem, 9vw, 6rem) clamp(1.25rem, 5vw, 3rem);
   display: grid;
-  grid-template-columns: 168px 1fr;
+  grid-template-columns: 190px 1fr;
   gap: clamp(1.75rem, 5vw, 3.25rem);
   align-items: start;
 }
 
 .portrait img,
 .portrait-placeholder {
-  width: 168px; height: 168px;
-  border-radius: 50%;
+  width: 190px; height: auto; aspect-ratio: 4 / 5;
+  border-radius: 10px;
   object-fit: cover;
   display: grid; place-items: center;
 }
@@ -377,7 +377,7 @@ strong { font-weight: 650; }
 
 @media (max-width: 640px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .portrait img, .portrait-placeholder { width: 120px; height: 120px; font-size: 2.2rem; }
+  .portrait img, .portrait-placeholder { width: 150px; font-size: 2.2rem; }
   .site-header { flex-direction: column; align-items: flex-start; gap: .6rem; }
   html { scroll-padding-top: 7.5rem; }
 }
@@ -389,3 +389,86 @@ strong { font-weight: 650; }
      away the artwork instead of just the movement. */
   .shot img:hover { transform: none; }
 }
+
+/* ── publications, one card per paper (2026-11-05) ─────── */
+
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pubs li.pub {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin: 0;
+  padding: 1.1rem 0;
+  max-width: none;
+  border-top: 1px solid var(--rule);
+}
+.pubs li.pub:first-child { border-top: 0; padding-top: 0; }
+.pubs li.pub > * { min-width: 0; }
+.pub-thumb {
+  width: 210px;
+  aspect-ratio: 3 / 2;
+  display: flex; align-items: center; justify-content: center;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.pub-thumb img { width: 100%; height: 100%; object-fit: contain; }
+.pub-body p { margin: 0; }
+.pub-title { font-weight: 650; color: var(--ink); line-height: 1.4; }
+.pub-authors { margin-top: .3rem !important; font-size: .9rem; color: var(--ink-soft); }
+.pub-venue { margin-top: .15rem !important; font-size: .9rem; color: var(--muted); }
+.pub-links { margin-top: .35rem !important; display: flex; flex-wrap: wrap; gap: .2rem .9rem; font-size: .85rem; }
+
+/* ── highlights ───────────────────────────────────────────── */
+
+.highlights { list-style: none; margin: 0; padding: 0; max-width: var(--measure); }
+.highlights li {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: .75rem;
+  padding: .45rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: .98rem;
+}
+.highlights li:last-child { border-bottom: 0; }
+.hl-year { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* ── writing list ─────────────────────────────────────────── */
+
+.writing-list { margin: 0 0 1.5rem; padding-left: 1.1rem; max-width: var(--measure); }
+.writing-list li { margin-bottom: .45rem; color: var(--ink-soft); }
+
+/* ── sketchbook: masonry columns, after janiyer.com/pastryportfolio.html ── */
+
+.sketch { column-count: 2; column-gap: 6px; }
+.sketch-group { margin-top: 3rem; }
+.art { margin: 0 0 6px; position: relative; break-inside: avoid; }
+.art img { display: block; width: 100%; height: auto; background: var(--surface); }
+.art figcaption {
+  position: absolute; left: 8px; bottom: 8px;
+  font-size: .8rem; line-height: 1.35;
+  color: #17171b;
+  background: rgba(255,255,255,.88);
+  padding: .25rem .5rem; border-radius: 3px;
+  max-width: calc(100% - 16px);
+}
+.art figcaption a { color: #5f4b8b; }
+
+@media (max-width: 640px) {
+  .pubs li.pub { grid-template-columns: 1fr; gap: .75rem; }
+  .pub-thumb { width: 100%; max-width: 360px; }
+  .pubs li { overflow-wrap: anywhere; }
+  .sketch { column-count: 1; }
+}
+
+/* ── hero role, email + icon links, after chencookie.github.io ── */
+
+.role { margin: 0 0 .35rem; font-size: 1.05rem; color: var(--ink-soft); }
+.hero-email { margin: 0 0 1rem; font-size: .98rem; }
+.icon-links { display: flex; flex-wrap: wrap; align-items: center; gap: 1.1rem; list-style: none; margin: 0; padding: 0; }
+.icon-links a { display: inline-flex; align-items: center; gap: .4rem; color: var(--ink-soft); text-decoration: none; font-size: 1.45rem; line-height: 1; }
+.icon-links a span { font-size: .9rem; font-weight: 600; letter-spacing: .02em; }
+.icon-links a:hover { color: var(--accent); }
