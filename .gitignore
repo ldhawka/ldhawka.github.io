@@ -1,0 +1,6 @@
+.DS_Store
+*.swp
+# private notes and design files: kept locally, not published
+NOTES_private.md
+design/
+images/photos/README.md
