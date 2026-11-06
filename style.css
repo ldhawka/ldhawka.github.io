@@ -118,14 +118,14 @@ strong { font-weight: 650; }
   margin: 0 auto;
   padding: clamp(3rem, 9vw, 6rem) clamp(1.25rem, 5vw, 3rem);
   display: grid;
-  grid-template-columns: 190px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: clamp(1.75rem, 5vw, 3.25rem);
   align-items: start;
 }
 
 .portrait img,
 .portrait-placeholder {
-  width: 190px; height: auto; aspect-ratio: 4 / 5;
+  width: 240px; height: auto; aspect-ratio: 4 / 5;
   border-radius: 10px;
   object-fit: cover;
   display: grid; place-items: center;
@@ -376,7 +376,7 @@ strong { font-weight: 650; }
 
 @media (max-width: 640px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .portrait img, .portrait-placeholder { width: 150px; font-size: 2.2rem; }
+  .portrait img, .portrait-placeholder { width: 200px; font-size: 2.2rem; }
   .site-header { flex-direction: column; align-items: flex-start; gap: .6rem; }
   html { scroll-padding-top: 7.5rem; }
 }
