@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://ldhawka.github.io/">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="style.css?v=2026-11-05b">
+<link rel="stylesheet" href="style.css?v=2026-11-06c">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 </head>
 <body>
@@ -25,7 +25,7 @@
   <nav aria-label="Primary">
     <ul>
       <li><a href="#research">Science</a></li>
-      <li><a href="#publications">Publications</a></li>
+      <li><a href="publications.html">Publications</a></li>
       <li><a href="beyond.html">Beyond the lab</a></li>
       <li><a href="sketchbook.html">Sketchbook</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -61,150 +61,44 @@
     </div>
   </section>
 
-  <!-- ───────────────────────── RESEARCH ───────────────────────── -->
-  <section id="research" class="section">
-    <h2 class="section-title">Science</h2>
-
-    <div class="prose">
+  <!-- ───────────────────────── SECTIONS ───────────────────────── -->
+  <section id="research" class="block">
+    <a class="block-img" href="publications.html"><img src="images/sketchbook/microglia-clocks-colour.jpg" width="460" height="460" alt="Line drawing of a branching microglial cell surrounded by clocks."></a>
+    <div>
+      <h2 class="section-title">Science</h2>
       <p>
-        I'm a PhD candidate in Bioinformatics &amp; Computational Biology at
-        <strong>UNC Chapel Hill</strong>, in
-        <a href="https://www.nataliestanley.com/" target="_blank" rel="noopener">Natalie Stanley's lab</a>.
-        I work on computational methods for immune data (single-cell, spatial, and
-        mass cytometry), mostly in <strong>ALS</strong>, and some in stroke, Alzheimer's,
-        and aging.
+        I work in <a href="https://www.nataliestanley.com/" target="_blank" rel="noopener">Natalie Stanley's lab</a>
+        at UNC Chapel Hill, on computational methods for immune data (single-cell, spatial,
+        and mass cytometry), mostly in ALS, and some in stroke, Alzheimer's, and aging.
       </p>
+      <p>
+        Recent work: how immune cells coordinate in blood
+        <a href="https://doi.org/10.1101/2025.08.26.672381" target="_blank" rel="noopener">separates ALS patients from healthy donors</a>,
+        and <a href="https://doi.org/10.1111/acel.70095" target="_blank" rel="noopener">markers of biological aging in microglia</a>.
+      </p>
+      <p><a class="more-link" href="publications.html">Publications<span aria-hidden="true"> →</span></a></p>
     </div>
   </section>
 
-  <!-- ───────────────────────── HIGHLIGHTS ───────────────────────── -->
-  <section id="highlights" class="section">
-    <h2 class="section-title">Highlights</h2>
-    <ul class="highlights">
-      <li><span class="hl-year">2026</span> <span>Computational biology intern in neurodegeneration, Bristol Myers Squibb</span></li>
-      <li><span class="hl-year">2026</span> <span>Kalman/AFAR Graduate Student Award in Geroscience, American Federation for Aging Research</span></li>
-      <li><span class="hl-year">2026</span> <span>Released the <a href="https://ldhawka.github.io/microglia-subtype-markers/" target="_blank" rel="noopener">Microglia Subtype Marker Atlas</a></span></li>
-      <li><span class="hl-year">2025</span> <span>Best Talk Award, Genetics/GMB/BCB Departmental Retreat, UNC Chapel Hill</span></li>
-    </ul>
+  <section id="beyond" class="block block-flip">
+    <a class="block-img" href="beyond.html"><img src="images/sketchbook/3817.jpg" width="1089" height="1400" alt="A drawing in the style of Munch's The Scream: the screaming figure wears headphones, with yellow lightning bolts around its ears."></a>
+    <div>
+      <h2 class="section-title">Beyond the lab</h2>
+      <p>
+        I write, edit and illustrate for The Pipette Pen, UNC's science communication club,
+        and co-direct HFROG, a trainee-run discussion group on human functional and
+        regulatory genomics.
+      </p>
+      <p><a class="more-link" href="beyond.html">Writing and more<span aria-hidden="true"> →</span></a></p>
+    </div>
   </section>
 
-  <!-- ───────────────────────── PUBLICATIONS ───────────────────────── -->
-  <section id="publications" class="section">
-    <h2 class="section-title">Publications</h2>
-    <p class="section-intro">
-      <span class="muted">* denotes co-first authorship. Full list on
-      <a href="https://scholar.google.com/citations?user=3wLXiAsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      and <a href="https://orcid.org/0000-0001-7666-3060" target="_blank" rel="noopener">ORCID</a>.
-      Figures are reproduced from the papers under their CC BY 4.0 licences (<em>J Affect Disord Rep</em>: CC BY-NC-ND 4.0, shown uncropped).</span>
-    </p>
-
-    <ol class="pubs">
-      <li class="pub">
-        <div class="pub-thumb"><img src="images/pubs/micron-2026.jpg" width="720" height="263" loading="lazy" alt="Multi-step diagram of the MICRON model: multiplexed single-cell images are cropped and used to predict outcomes."></div>
-        <div class="pub-body">
-          <p class="pub-title">MICRON learns outcome-associated representations of spatial immune microenvironments</p>
-          <p class="pub-authors">Chen, CJ., George, B., <span class="me">Dhawka, L.</span>, Evangelista, B.A., &amp; Stanley, N.</p>
-          <p class="pub-venue">In revision. Preprint: <em>bioRxiv</em> (2026)</p>
-          <p class="pub-links">
-          <a href="https://doi.org/10.64898/2026.04.14.718488" target="_blank" rel="noopener">paper</a>
-          </p>
-        </div>
-      </li>
-      <li class="pub">
-        <div class="pub-thumb"><img src="images/pubs/als-2025.jpg" width="720" height="224" loading="lazy" alt="Study overview: discovery cohort profiled by CyTOF (38 ALS, 11 healthy) and validation cohort profiled by scRNA-seq (30 ALS, 10 healthy)."></div>
-        <div class="pub-body">
-          <p class="pub-title">Peripheral immune coordination patterns stratify ALS patients and healthy donors across single-cell platforms</p>
-          <p class="pub-authors"><span class="me">Dhawka, L.*</span>, Evangelista, B.A.*, Arooji, O.K., Iannone, M.A., Pellegrino, K., Traub, R., Li, X., Bedlack, R., Meeker, R.B., Cohen, T.J., &amp; Stanley, N.</p>
-          <p class="pub-venue">In revision, <em>Journal of Neuroinflammation</em>. Preprint: <em>bioRxiv</em> (2025)</p>
-          <p class="pub-links">
-          <a href="https://doi.org/10.1101/2025.08.26.672381" target="_blank" rel="noopener">paper</a>
-          <a href="https://github.com/ldhawka/als-cross-platform-classification" target="_blank" rel="noopener">code</a>
-          <a href="https://doi.org/10.5281/zenodo.16039495" target="_blank" rel="noopener">data</a>
-          </p>
-        </div>
-      </li>
-      <li class="pub">
-        <div class="pub-thumb"><img src="images/pubs/aging-cell-2025.jpg" width="720" height="425" loading="lazy" alt="Figure 1b of the paper: per-sample summaries of single-cell microglia profiles used to find microglia features that change with age."></div>
-        <div class="pub-body">
-          <p class="pub-title">Microglia single-cell RNA-seq enables robust and applicable markers of biological aging</p>
-          <p class="pub-authors">Stanley, N.*, <span class="me">Dhawka, L.*</span>, Jaikumar, S., Huang, YC., &amp; Zannas, A.S.</p>
-          <p class="pub-venue"><em>Aging Cell</em>, 24(8), e70095 (2025)</p>
-          <p class="pub-links">
-          <a href="https://doi.org/10.1111/acel.70095" target="_blank" rel="noopener">paper</a>
-          <a href="https://github.com/CompCy-lab/microglia-aging-clock" target="_blank" rel="noopener">code</a>
-          <a href="https://ldhawka.github.io/microglia-subtype-markers/" target="_blank" rel="noopener">marker atlas</a>
-          </p>
-        </div>
-      </li>
-      <li class="pub">
-        <div class="pub-thumb"><img src="images/pubs/comms-biol-2024.jpg" width="720" height="316" loading="lazy" alt="Figure 1a of the paper: workflow for isolating and profiling ubiquitinated proteins from mouse cortex after stroke."></div>
-        <div class="pub-body">
-          <p class="pub-title">Post-ischemic ubiquitination at the postsynaptic density reversibly influences the activity of ischemia-relevant kinases</p>
-          <p class="pub-authors"><span class="me">Dhawka, L.*</span>, Palfini, V.*, Hambright, E., Blanco, I., Poon, C., Kahl, A., Resch, U., Bhawal, R., Benakis, C., Balachandran, V., Holder, A., Zhang, S., Iadecola, C., &amp; Hochrainer, K.</p>
-          <p class="pub-venue"><em>Communications Biology</em>, 7(1), 321 (2024)</p>
-          <p class="pub-links">
-          <a href="https://doi.org/10.1038/s42003-024-06009-8" target="_blank" rel="noopener">paper</a>
-          </p>
-        </div>
-      </li>
-      <li class="pub">
-        <div class="pub-thumb"><img src="images/pubs/biology-2023.jpg" width="720" height="433" loading="lazy" alt="Figure 2a of the paper: heatmap of classifier accuracy across feature-selection methods."></div>
-        <div class="pub-body">
-          <p class="pub-title">Risk for seasonal affective disorder (SAD) linked to circadian clock gene variants</p>
-          <p class="pub-authors">Dang, T., Russel, W.A., Saad, T., <span class="me">Dhawka, L.</span>, Ay, A., &amp; Ingram, K.K.</p>
-          <p class="pub-venue"><em>Biology</em>, 12(12) (2023)</p>
-          <p class="pub-links">
-          <a href="https://doi.org/10.3390/biology12121532" target="_blank" rel="noopener">paper</a>
-          </p>
-        </div>
-      </li>
-      <li class="pub">
-        <div class="pub-thumb"><img src="images/pubs/plos-one-2022.jpg" width="720" height="409" loading="lazy" alt="Bar chart of the percentage of participants reporting each pandemic-related sleep or mental health effect."></div>
-        <div class="pub-body">
-          <p class="pub-title">Intra-individual impact of the COVID-19 pandemic on mental health and sleep in young adults</p>
-          <p class="pub-authors">Knickerbocker, K.J., Cox, E.A., <span class="me">Dhawka, L.</span>, Woods, K., &amp; Ingram, K.K.</p>
-          <p class="pub-venue"><em>PLOS ONE</em>, 17(10), e0276165 (2022)</p>
-          <p class="pub-links">
-          <a href="https://doi.org/10.1371/journal.pone.0276165" target="_blank" rel="noopener">paper</a>
-          </p>
-        </div>
-      </li>
-      <li class="pub">
-        <div class="pub-thumb"><img src="images/pubs/jadr-2022.jpg" width="720" height="302" loading="lazy" alt="Bar charts of relative circadian amplitude and phase in summer and winter for people with and without SAD."></div>
-        <div class="pub-body">
-          <p class="pub-title">Low circadian amplitude and delayed phase are linked to seasonal affective disorder (SAD)</p>
-          <p class="pub-authors"><span class="me">Dhawka, L.</span>, Cha, Y., Ay, A., &amp; Ingram, K.K.</p>
-          <p class="pub-venue"><em>Journal of Affective Disorders Reports</em>, 10, 100395 (2022)</p>
-          <p class="pub-links">
-          <a href="https://doi.org/10.1016/j.jadr.2022.100395" target="_blank" rel="noopener">paper</a>
-          </p>
-        </div>
-      </li>
-    </ol>
-  </section>
-
-  <!-- ───────────────────────── BEYOND ───────────────────────── -->
-  <section id="beyond" class="section">
-    <h2 class="section-title">Beyond the lab</h2>
-
-    <div class="two-col">
-      <div>
-        <h3>Science writing &amp; community</h3>
-        <p>
-          I write, edit and illustrate for <strong>The Pipette Pen</strong>, UNC's science communication
-          club (<a href="beyond.html#writing">articles</a>), and co-direct <strong>HFROG</strong>, a trainee-run discussion group on human
-          functional and regulatory genomics. Before that I tutored calculus and differential
-          equations for four years.
-        </p>
-      </div>
-      <div>
-        <h3>Outside work</h3>
-        <p>
-          Watercolour and origami, running and lifting. I'm from Mauritius, so Creole was
-          my first language; Mandarin is the one I'm currently failing to learn.
-        </p>
-        <p><a class="more-link" href="beyond.html">More<span aria-hidden="true"> →</span></a></p>
-      </div>
+  <section id="sketchbook" class="block">
+    <a class="block-img" href="sketchbook.html"><img src="images/sketchbook/4011.jpg" width="1400" height="929" alt="Stained-glass style painting of pink lotus flowers and leaves over water."></a>
+    <div>
+      <h2 class="section-title">Sketchbook</h2>
+      <p>Things I've painted and drawn over the years.</p>
+      <p><a class="more-link" href="sketchbook.html">See the sketchbook<span aria-hidden="true"> →</span></a></p>
     </div>
   </section>
 
@@ -215,13 +109,7 @@
       I'm always glad to hear from people working on neuroimmunology, cell–cell communication,
       or anything that makes messy biological data more interpretable.
     </p>
-    <ul class="contact-list">
-      <li><a href="mailto:ldhawka@unc.edu">ldhawka@unc.edu</a></li>
-      <li><a href="https://www.linkedin.com/in/luvna-dhawka-3a6896117/" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li><a href="https://github.com/ldhawka" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://scholar.google.com/citations?user=3wLXiAsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-      <li><a href="https://orcid.org/0000-0001-7666-3060" target="_blank" rel="noopener">ORCID</a></li>
-    </ul>
+    <p><a href="mailto:ldhawka@unc.edu">ldhawka@unc.edu</a></p>
   </section>
 
 </main>
